@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="form-group">
+    <%= form_with model: task do |f| %>
+      <div>
+        <p><%= f.label :title %> </p>
+        <%= f.text_field :title %>
+      </div>
+      <div>
+        <p><%= f.label :details %> </p>
+        <%= f.text_area :details %>
+      </div>
+        <%= f.submit 'Submit', :class => 'btn' %>
+      </div>
+    <% end %>
+  </div>
+<div>
